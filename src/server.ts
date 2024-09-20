@@ -17,8 +17,8 @@ type NodeMail = {
 
 app.register(cors, {
     origin: "*",
-    methods: ['GET', 'Post','Put'],
-    allowedHeaders: ["content-Type"]
+    methods: ['GET','POST','PUT','DELETE'],
+    allowedHeaders: ["Content-Type"]
 })
 
 let transport = nodemailer.createTransport({
